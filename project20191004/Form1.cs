@@ -15,6 +15,36 @@ namespace project20191004
         public Form1()
         {
             InitializeComponent();
+
+            
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = (int.Parse(textBox2.Text) + 
+            int.Parse(textBox3.Text)).ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            colorDialog1.ShowDialog();
+            BackColor = colorDialog1.Color;
         }
     }
 }
